@@ -12,6 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/animation.css">
 
         <title>Vamo Firma!</title>
     </head>
@@ -96,7 +97,18 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about">
                 <div class="about__container grid">
-                    <img src="assets/img/Facebook 3D médio.jpg" alt="" class="about__img">
+                    <div class="slider">
+                        <input name='slide' type="radio" checked>
+                        <input name='slide' type="radio">
+                        <input name='slide' type="radio">
+                    <!-- <img src="assets/img/Facebook 3D médio.jpg" alt="" class="about__img"> -->
+                    
+                        <div class="slider-content">
+                            <div class="slider-item about__img"> <img class="about__img" src="assets/img/Facebook 3D médio.jpg" ></div>
+                            <div class="slider-item about__img"> <img class="about__img" src="assets\img\carrosel1.jpg"></img> <img class="about__img" src="assets\img\carrosel2.jpg"> </img> </div>
+                            <div class="slider-item about__img"> <img class="about__img" src="assets\img\carrosel3.jpg"></img> <img class="about__img" src="assets\img\carrosel4.jpg"></img> </div>
+                        </div>
+                    </div>
 
                     <div class="about__data">
                         <h2 class="section__title about__title">
@@ -397,7 +409,7 @@
                                 <h3 class="contact__subtitle">Ligue para nossa equipe:</h3>
                                 <span class="contact__description">
                                     <i class="ri-phone-line contact__icon"></i>
-                                    +999 888 777
+                                    +55 (51) 9 8020 8625
                                 </span>
                             </div>
 
@@ -405,7 +417,7 @@
                                 <h3 class="contact__subtitle">Digite um e-mail para nós:</h3>
                                 <span class="contact__description">
                                     <i class="ri-mail-line contact__icon"></i>
-                                    user@email.com
+                                    elis@vamofirma.com.br
                                 </span>
                             </div>
                         </div>
@@ -480,7 +492,7 @@
                     <h3 class="footer__title">Nosso Contato</h3>
 
                     <ul class="footer__data">
-                        <li class="footer__information">+999 888 777</li>
+                        <li class="footer__information">+55 (51) 9 8020 8625</li>
                         
                         <div class="footer__social">
                             <a href="https://pt-br.facebook.com/VamoFirmaMarketing/" class="footer__social-link">
@@ -496,11 +508,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__content">
-                        <a>
-                            <img src="assets\img\DSC_0744-Editar.jpg">
-                        </a>
-                </div>
+
             </div>
 
             <p class="footer__copy">&#169; Quidittas Web. Todos direitos Reservados. </p>

@@ -140,3 +140,34 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+/*===============  CARROSSEL ===============*/
+
+$(document).ready(function(){
+   
+    var slids = $(".slider [type=radio]"); // busca os radios na div
+    var slids_len = slids.length; // conta o número de radios
+    var intervalo = 1; // intervalo em segundos
+    
+    function rodar(){
+       var slids_ativo = $(".slider [type=radio]:checked")
+       .attr("slide")
+       .match(/\d+/)[0]; // pega o valor numérico do id do radio checado
+ 
+       if(slids_ativo == slids_len) slids_ativo = 0; // se estiver no último slide, volta pro primeiro
+ 
+       slids.eq(slids_ativo).prop("checked", true); // checa o radio da vez
+    }
+    
+    var tempo = setInterval(rodar, intervalo*1000); // inicia o temporizador
+    
+    $(".slider").hover(
+       function(){ // função quando entra o mouse
+          clearInterval(tempo); // cancela o temporizador
+       },
+       function(){ // função quando retira o mouse
+          tempo = setInterval(rodar, intervalo*1000); // reinicia o temporizador
+       }
+    );
+    
+ });
