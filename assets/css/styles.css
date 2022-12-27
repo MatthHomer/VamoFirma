@@ -216,6 +216,10 @@ the website, in dark theme
   margin-right: var(--mb-1-5);
 }
 
+.nosso {
+  padding-top: 0px;
+}
+
 .grid{
   display: grid;
 }
@@ -356,14 +360,10 @@ the website, in dark theme
   row-gap: 2rem;
 }
 
-.home__img{
-  width: 200px;
-  justify-self: center;
-}
 
 .home__title{
   font-size: var(--big-font-size);
-  line-height: 140%;
+  line-height: 110%;
   margin-bottom: var(--mb-1);
 }
 
@@ -587,7 +587,7 @@ the website, in dark theme
 .product__circle{
   width: 90px;
   height: 90px;
-  background-color: var(--first-color-lighten);
+  background-color: #7a07a13b;
   border-radius: 50%;
   position: absolute;
   top: 18%;
@@ -1096,7 +1096,7 @@ the website, in dark theme
   }
   .home__social-follow::after{
     width: 1.5rem;
-    right: -60%;
+    right: -30%;
   }
   .home__social-link{
     font-size: 1.15rem;
